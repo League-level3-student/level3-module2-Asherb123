@@ -24,7 +24,7 @@ class _02_SwappingDigitsTest {
     
     @Test
     void test3() {
-        int[] m = {7, 3, 9, 5, 2};
-        assertEquals(5, _02_SwappingDigits.findMiddle(m));
+        int[] m = {7, 3, 9, 5, 2, 69, 420};
+        assertEquals(7, _02_SwappingDigits.findMiddle(m));
     }
 }
