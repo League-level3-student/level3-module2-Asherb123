@@ -75,12 +75,48 @@ public class Algorithms {
 	public static Object findLongestWord(List<String> words) {
 		// TODO Auto-generated method stub
 		int longString = 0;
+		String s= "";
 		for (int i = 0; i < words.size(); i++) {
-			if (words.get(i)) {
-				
+			if (words.get(i).length()>longString) {
+			longString=words.get(i).length();
+			
+			s = words.get(i);
+			
 			}
 			
 			
+		}
+		
+		return s;
+		//return null;
+	}
+
+	public static Object containsSOS(List<String> message1) {
+		// TODO Auto-generated method stub
+	boolean sos = false;
+		for (int j = 0; j < message1.size(); j++) {
+			
+		
+		if (message1.get(j).contains("... --- ...") ) {
+			sos = true;
+			break;
+		}
+		else {
+			sos = false;
+		}
+	}
+		return sos;	
+		
+	}
+
+	public static List<String> sortScores(List<Double> results) {
+		// TODO Auto-generated method stub
+		Double highScore = (double) 0;
+		for (int i = 0; i < results.size(); i++) {
+			if (results.get(i)>highScore) {
+				highScore = results.get(i);
+				
+			}
 		}
 		
 		
