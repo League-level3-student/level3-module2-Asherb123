@@ -109,17 +109,47 @@ public class Algorithms {
 		
 	}
 
-	public static List<String> sortScores(List<Double> results) {
+	public static List<Double> sortScores(List<Double> results) {
 		// TODO Auto-generated method stub
-		Double highScore = (double) 0;
-		for (int i = 0; i < results.size(); i++) {
-			if (results.get(i)>highScore) {
-				highScore = results.get(i);
+		
+		
+		for (int i = 0; i < results.size()-1; i++) {
+			if (results.get(i)>results.get(i+1)) {
+				//highScore = results.get(i);
+				
+				
+				Double temp = results.get(i);
+				
+				results.set(i, results.get(i+1));
+				
+			results.set(i+1, temp);
 				
 			}
+		
+		}
+	
+		
+		return results;
+		//return null;
+	}
+
+	public static List<String> sortDNA(List<String> unsortedSequences) {
+		// TODO Auto-generated method stub
+		for (int i = 0; i < unsortedSequences.size()-1; i++) {
+			if (unsortedSequences.get(i).length()>unsortedSequences.get(i+1).length()) {
+				
+				String temp  = unsortedSequences.get(i);
+				
+				unsortedSequences.set(i, unsortedSequences.get(i+1));
+				
+				unsortedSequences.set(i+1, temp);
+				
+			}
+			
 		}
 		
 		
-		return null;
+		return unsortedSequences;
+		//return 0;
 	}
 }

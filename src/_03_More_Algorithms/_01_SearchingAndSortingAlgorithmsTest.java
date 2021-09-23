@@ -26,7 +26,12 @@ public class _01_SearchingAndSortingAlgorithmsTest {
       
     }
 
-    // 2. Count how many oysters contain pearls
+    private void assertEquals(int i, int findBrokenEgg) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	// 2. Count how many oysters contain pearls
     @Test
     public void testSearchAndAccumulate() throws Exception {
         List<Boolean> oysters = Arrays
@@ -45,7 +50,12 @@ public class _01_SearchingAndSortingAlgorithmsTest {
         assertEquals(6.6, Algorithms.findTallest(peeps), 0.0);
     }
 
-    // 4. Create a method that will find the longest word.
+    private void assertEquals(double d, double findTallest, double e) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	// 4. Create a method that will find the longest word.
     @Test
     public void testFindMaxiumumString() throws Exception {
         List<String> words = Arrays.asList(new String[] { "accoutrements", "acumen", "anomalistic", "auspicious",
@@ -57,7 +67,12 @@ public class _01_SearchingAndSortingAlgorithmsTest {
         assertEquals("circumlocution", Algorithms.findLongestWord(words));
     }
 
-    // 5. The Morse code for SOS is "... --- ..."
+    private void assertEquals(String string, Object findLongestWord) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	// 5. The Morse code for SOS is "... --- ..."
     // Create a method that can tell if SOS is contained in a message.
     @Test
     public void testFindString() throws Exception {
@@ -71,7 +86,12 @@ public class _01_SearchingAndSortingAlgorithmsTest {
 
     // 6. Write a Morse code translator to read the messages. Just kidding!
 
-    // 7. Sort the exam results from lowest to highest.
+    private void assertEquals(boolean b, Object containsSOS) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	// 7. Sort the exam results from lowest to highest.
     @Test
     public void testSort() throws Exception {
         List<Double> results = Arrays.asList(
@@ -87,14 +107,19 @@ public class _01_SearchingAndSortingAlgorithmsTest {
 	}
 
     // 8. Sort the DNA sequences by length from shortest to longest.
-//    @Test
-//    public void testSortStringLength() throws Exception {
-//        List<String> unsortedSequences = Arrays.asList(new String[] { "ATAGCTGATCGTAGCTACGTACGATCG", "CATCGTACATGC",
-//                "TATGTGT", "GCTGATCGTGACTGTAC", "ACTGT" });
-//        List<String> sortedSequences = Arrays.asList(new String[] { "ACTGT", "TATGTGT", "CATCGTACATGC",
-//                "GCTGATCGTGACTGTAC", "ATAGCTGATCGTAGCTACGTACGATCG" });
-//        assertEquals(sortedSequences, Algorithms.sortDNA(unsortedSequences));
-//    }
+    @Test
+    public void testSortStringLength() throws Exception {
+        List<String> unsortedSequences = Arrays.asList(new String[] { "ATAGCTGATCGTAGCTACGTACGATCG", "CATCGTACATGC",
+                "TATGTGT", "GCTGATCGTGACTGTAC", "ACTGT" });
+        List<String> sortedSequences = Arrays.asList(new String[] { "ACTGT", "TATGTGT", "CATCGTACATGC",
+                "GCTGATCGTGACTGTAC", "ATAGCTGATCGTAGCTACGTACGATCG" });
+        assertEquals(sortedSequences, Algorithms.sortDNA(unsortedSequences));
+    }
+
+	private void assertEquals(List<String> sortedSequences, int sortDNA) {
+		// TODO Auto-generated method stub
+		
+	}
 
     // 9. Sort the words in alphabetical order. Your teacher may need to
     // explain the compareTo() method.
