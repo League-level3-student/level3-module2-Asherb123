@@ -9,11 +9,21 @@ class _03_SearchTest {
     /*
      *  A minimum of 3 tests are required for each method
      */
-
+	
+	
     @Test
     public void testLinearSearch() {
         // 1. Use the assertEquals() method to test your linear search method
-        assertEquals(false, true);
+    	 String[] whereWaldo = new String [4];
+    	 whereWaldo [0] = "Joe mamma";
+    	 whereWaldo [1] = "Juan";
+    	 whereWaldo [2] = "Waldo";
+    	 whereWaldo [3]= "Cody";
+    	 whereWaldo [4] = "Jeff";
+    			 
+    	
+    	
+    	assertEquals(false, true);
     }
 
     @Test

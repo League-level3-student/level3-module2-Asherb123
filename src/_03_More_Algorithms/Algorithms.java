@@ -152,4 +152,23 @@ public class Algorithms {
 		return unsortedSequences;
 		//return 0;
 	}
+
+	public static List<String> sortWords(List<String> words) {
+		// TODO Auto-generated method stub
+		for (int i = 0; i < words.size()-1; i++) {
+		int worrds= 	words.get(i).compareTo(words.get(i+1));
+			System.out.println(worrds);
+			if (worrds<0) {
+				String temp = words.get(i);
+				
+				words.set(i, words.get(i+1));
+				
+				words.set(i+1, temp);
+			}
+		}
+		
+		
+		
+		return words;
+	}
 }

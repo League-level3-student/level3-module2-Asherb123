@@ -116,6 +116,11 @@ public class _01_SearchingAndSortingAlgorithmsTest {
         assertEquals(sortedSequences, Algorithms.sortDNA(unsortedSequences));
     }
 
+	private void assertEquals(List<String> sortedSequences, List<String> sortDNA) {
+		// TODO Auto-generated method stub
+		
+	}
+
 	private void assertEquals(List<String> sortedSequences, int sortDNA) {
 		// TODO Auto-generated method stub
 		
@@ -123,13 +128,13 @@ public class _01_SearchingAndSortingAlgorithmsTest {
 
     // 9. Sort the words in alphabetical order. Your teacher may need to
     // explain the compareTo() method.
-//    @Test
-//    public void testSortStringContents() throws Exception {
-//        List<String> words = Arrays
-//                .asList(new String[] { "aby", "dap", "alt", "alb", "ama", "ard", "ana", "ala", "awn", "dah", "bar",
-//                        "bee", "bel", "bot", "bis", "cep", "alk", "cog", "col", "cwm", "dag", "ait", "dal", "daw" });
-//        assertEquals("aby", Algorithms.sortWords(words).get(0));
-//        assertEquals("bar", Algorithms.sortWords(words).get(10));
-//        assertEquals("daw", Algorithms.sortWords(words).get(words.size() - 1));
-//    }
+    @Test
+    public void testSortStringContents() throws Exception {
+        List<String> words = Arrays
+                .asList(new String[] { "aby", "dap", "alt", "alb", "ama", "ard", "ana", "ala", "awn", "dah", "bar",
+                        "bee", "bel", "bot", "bis", "cep", "alk", "cog", "col", "cwm", "dag", "ait", "dal", "daw" });
+        assertEquals("aby", Algorithms.sortWords(words).get(0));
+        assertEquals("bar", Algorithms.sortWords(words).get(10));
+        assertEquals("daw", Algorithms.sortWords(words).get(words.size() - 1));
+    }
 }
