@@ -25,15 +25,16 @@ public class _02_BinarySearch {
     		int mid = start + (end - start)/2;
             // 4. if the array element at mid is equal to value
             //    then return mid
-    			if (mid==value) {
+    			if (array[mid]==value) {
 					return mid;
 				}
             // 5. if the array element at mid is greater than value
             //    then return the value returned from a call to the 
             //    binarySearch method. Pass in start and mid - 1
             //    for the end variable.
-    			if (mid>value) {
-					binarySearch(array,start, mid-1, value);
+    			if (array[mid]>value) {
+					return binarySearch(array,start, mid-1, value);
+					
 				}
             // 6. return the value returned from a call to the binarySearch
             //    method. Use mid + 1 as the start, and pass in end.
