@@ -1,6 +1,7 @@
 package _04_JavaClassSearchAndSort;
 
 import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertTrue;
 import static org.junit.jupiter.api.Assertions.*;
 
 import java.util.ArrayList;
@@ -38,7 +39,17 @@ class _02_JavaClassSearchSortTest {
         assertFalse(_02_JavaClassSearchSort.arraySearch(unsorted, 'm'));
     }
 
-    @Test
+    private void assertTrue(char[] arraySearch) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	private void assertFalse(char[] arraySearch) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Test
     void testListSearch() {
         Character[] unsorted = { 'r', 'a', 'q', 'p', 'g', 'z' };
         List<Character> unsortedList = new ArrayList<>(Arrays.asList(unsorted));
@@ -46,4 +57,14 @@ class _02_JavaClassSearchSortTest {
         assertTrue(_02_JavaClassSearchSort.listSearch(unsortedList, 'p'));
         assertFalse(_02_JavaClassSearchSort.listSearch(unsortedList, 'm'));
     }
+
+	private void assertFalse(Boolean listSearch) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	private void assertTrue(Boolean listSearch) {
+		// TODO Auto-generated method stub
+		
+	}
 }

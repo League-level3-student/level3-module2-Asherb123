@@ -30,6 +30,7 @@ public class Algorithms {
 
 	public static boolean isPrime(int i) {
 		// TODO Auto-generated method stub
+		
 		return false;
 	}
 
